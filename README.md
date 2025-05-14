@@ -1,5 +1,6 @@
 # Ex.06 Book Front Cover Page Design
-## Date:14-5-2025
+## Date:14/05/2025
+## Reg No :212224230018
 
 ## AIM:
 To design a book front cover page using HTML and CSS.
@@ -32,124 +33,80 @@ Publish the website in the LocalHost.
 
 ## PROGRAM:
 ```
-<html>
- <head>
-       <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-          <style>
-         
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wings of Fire - Book Template</title>
+  <style>
+    body {
+      background: #f2e9e4;
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+    }
+    .book {
+      width: 12cm;          /* typical book width */
+      height: 18cm;         /* fixed height */
+      margin: 50px auto;
+      padding: 20px;
+      background: #ffffff;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      border: 2px solid #dcdcdc;
+      overflow: hidden;     /* ensure content fits */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .cover {
+      text-align: center;
+    }
+    .cover img {
+      width: 7cm;
+      margin-bottom: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .author {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 15px;
+    }
+    .description {
+      font-size: 14px;
+      line-height: 1.4;
+      color: #333;
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+<div class="book">
+  <div class="cover">
+    <img src="abdul.jpeg" alt="Wings of Fire Book Cover">
+    
+    <div class="title">Wings of Fire</div>
+    <div class="author">By Dr. A.P.J. Abdul Kalam</div>
+  </div>
+  <div class="description">
+    "Wings of Fire" is the inspiring autobiography of Dr. A.P.J. Abdul Kalam, who rose from humble beginnings to become India's 11th President and a celebrated scientist. 
+    It chronicles his early life, struggles, achievements in the Indian Space Research and Defense sectors, and his vision for India’s future.
+  </div>
+</div>
 
-
-         .bookpage{
-              width: 400px;
-              height: 600px;
-              color:rgba(243, 195, 195, 0.938)00, 17, 17;
-              margin-left : auto;
-              margin-right : auto;
-              padding: 20px;
-
-              font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-              background-image: url(back.jpg);
-              background-size: cover;
-              }
-             .insight{
-                color:rgb(255, 0, 0);
-              }
-
-             .hrstyle{
-             width:100px;
-             }
-             .author{
-             display: inline;
-             position: relative;
-             color:rgb(10, 10, 10);
-             top:240px;
-
-             font-family:Georgia;
-             font-size: medium;
-             }
-             .booktitle{
-             font-family: 'Courier New',Courier,monospace;
-             font-size: larger;
-             text-align: center;
-             position: relative;
-             top: 30px;
-             color:rgb(0, 0, 0);
-             ;
-             }
-             .id {
-             width:400px;
-             position: relative;
-             top:250px;
-             }
-             .pub{
-             font-size: medium;
-             position: relative;
-             top:204px;
-             left:350px;
-             color:rgb(0, 0, 0);
-             }
-             .ed{
-             color:rgb(218, 16, 16);
-             font-size: medium;
-             font-family: Verdana;
-             position:relative;
-             top:150px;
-             }
-             .subtitle{
-             font-family:Tahoma;
-             font-size: large;
-             position:relative;
-             top:40px;
-             color:rgb(255, 0, 0);
-             }
-             .mypic{
-             position:relative;
-             top:200px;
-             left: 275px;
-             width: 100px;
-             height: 100px;
-             background-size:cover;
-             }
-             </style>
-             <title>Book Cover Page</title>
-             </head>
-             <body>
-             <div class="bookpage">
-             <div class="insight">
-               AK  PUBLICATION
-             </div>
-             <div class="hrstyle">
-                <hr style="color: rgb(0, 0, 0);">
-             </div>
-             <div class="booktitle">
-             <h1>FUNDAMENTALS OF WEB APPLICATION DEVELOPMENT</h1>
-             </div>
-             <div class="subtitle">
-               EASY WAY TO LEARN WEB DEVELOPMENT
-             </div>
-             <div class ="mypic">
-               <img src="myphoto.jpg" width="130" height="145" alt="">
-             </div>
-             <div class="id">
-             <hr style="color: rgb(252, 0, 0);">
-             </div>
-             <div class="author">
-             <p><b>AKASH P</b></p>
-             </div>
-             <div class="pub">
-             SEC
-             </div>
-             <div class="ed">
-             <b>FULL EDITION</b>
-          </div>
-    </body>
+</body>
 </html>
+
+
 ```
 
-
 ## OUTPUT:
-![alt text](<Screenshot 2025-05-07 003338.png>)
+![alt text](<Screenshot 2025-05-11 172733.png>)
 
 ## RESULT:
 The program for designing book front cover page using HTML and CSS is completed successfully.
